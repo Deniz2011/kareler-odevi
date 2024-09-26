@@ -1,0 +1,50 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* İki sütunlu yapı */
+    grid-template-rows: 1fr 1fr; /* İki satırlık yapı */
+    grid-gap: 10px;
+    background-color: #2196F3;
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Sol tarafa yaslamak için */
+  .box{
+    width:100px;
+    height:100px;
+  }
+  .box2{
+        width: 25px;
+        height: 25px;
+        background-color: #000;
+        
+  }
+
+  .item1 {
+    justify-self: start;
+ 
+  }
+  
+  /* Sağ tarafa yaslamak için */
+  .item2 {
+    justify-self: end;
+  }
+  
+  /* Alt satırda sola yaslanan kutu */
+  .item3 {
+    justify-self: start;
+    align-self: end;
+  }
+  
+  /* Alt satırda sağa yaslanan kutu */
+  .item4 {
+    justify-self: end;
+    align-self: end;
+  }
